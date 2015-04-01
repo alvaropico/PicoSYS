@@ -49,7 +49,6 @@ public class UsuarioController extends HttpServlet {
         } else {
             forward = SAVE;
         }
-
         RequestDispatcher view = request.getRequestDispatcher(forward);
         view.forward(request, response);
     }
